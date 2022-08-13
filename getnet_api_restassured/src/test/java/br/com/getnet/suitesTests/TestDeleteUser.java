@@ -11,7 +11,7 @@ public class TestDeleteUser {
   Services deleteService = new Services();
 
   @Test
-  public void QuandoDeletoUmUsuarioEntaoRetornaStatus200() {
+  public void DeveExcluirRegistroDeUsuarioDadoIdValidoRetornaStatus200() {
     Response response = deleteService.deleteUser();
     assertEquals(204, response.getStatusCode());
     System.out.println("Usuario deletado com sucesso!");

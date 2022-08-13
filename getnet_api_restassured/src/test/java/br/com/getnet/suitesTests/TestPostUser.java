@@ -19,35 +19,35 @@ public class TestPostUser {
   Response response;
 
   @Test
-  public void QuandoCadastroUmNovoUsuarioEntaoRetornaStatus201() {
+  public void QuandoCadastroUmNovoUsuarioDadoNameeJobEntaoRetornaStatus201() {
     Response response = postService.postCreateUser(name, job);
     assertEquals(201, response.getStatusCode());
     System.out.println("Cadastro de um novo usuario realizada com sucesso!");
   }
 
   @Test
-  public void QuandoRegistroUmNovoUsuarioEntaoRetornaStatus200() {
+  public void QuandoRegistroUmUsuarioDadoEmailePasswordEntaoRetornaStatus200() {
     Response response = postService.postRegisterUser(emailCadastrado, passwordCadastrado);
     assertEquals(200, response.getStatusCode());
     System.out.println("Resgistro do usuario realizada com sucesso!");
   }
 
   @Test
-  public void QuandoRegistroUmNovoUsuarioSemPasswordEntaoRetornaStatus400() {
+  public void NaoDeveRegistrarUmNovoUsuarioDadoPasswordVazioEntaoRetornaStatus400() {
     Response response = postService.postRegisterUnsuccefulUser(emailCadastrado);
     assertEquals(400, response.getStatusCode());
     System.out.println("error: Missing password");
   }
 
   @Test
-  public void QuandoEfetuoLoginComEmailePasswordValidosEntaoRetornaStatus200() {
+  public void QuandoEfetuoLoginDadoEmailePasswordValidosEntaoRetornaStatus200() {
     Response response = postService.postLoginUser(emailCadastrado, passwordCadastrado);
     assertEquals(200, response.getStatusCode());
     System.out.println("Login Efetuado com sucesso!");
   }
 
   @Test
-  public void QuandoEfetuoLoginComEmailSemPasswordEntaoRetornaStatus400() {
+  public void NaoDeveEfetuarLoginDadoPasswordVazioEntaoRetornaStatus400() {
     Response response = postService.postLoginUnsuccefulUser(emailCadastrado);
     assertEquals(400, response.getStatusCode());
     System.out.println("error: Missing password");

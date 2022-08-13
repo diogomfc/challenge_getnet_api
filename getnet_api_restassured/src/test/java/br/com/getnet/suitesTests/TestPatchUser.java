@@ -17,7 +17,7 @@ public class TestPatchUser {
   Response response;
 
   @Test
-  public void QuandoAtualizoUmUsuarioEntaoRetornaStatus200() {
+  public void DeveAtualizarCadastroDoUsuarioDadoNameeJobEntaoRetornaStatus200() {
     Response response = patchService.putUpdateUser(name, job);
     assertEquals(200, response.getStatusCode());
     System.out.println("Atualizacao do usuario realizada com sucesso!");
