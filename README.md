@@ -104,11 +104,11 @@ Adicionado na 📂 postman do projeto collection e environment.
 ## 🧪 Cobertura dos testes
 
 <img src="docs/txtCadastro.png">
-<p style='font-size: 17px'>Este endpoint é responsável por cadastrar um novo usuário</p>.</p>
+<p style='font-size: 17px'>Este endpoint é responsável por cadastrar um novo usuário.</p>
 <img src="docs/imgPost.png" width="700px">
 
 <img src="docs/txtConsultar.png">
-<p style='font-size: 17px'>Este endpoint é responsável por retorna a simulação previamente cadastrada</p>
+<p style='font-size: 17px'>Este endpoint é responsável por retorna a simulação previamente cadastrada.</p>
 <img src="docs/imgGET.png" width="700px">
 
 <img src="docs/txtAlterar.png">
