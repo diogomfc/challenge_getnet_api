@@ -69,8 +69,9 @@ Adicionado na 📂 postman do projeto collection e environment.
 ## 🧪 Cobertura dos testes
 
 <img src="docs/txtCadastro.png">
-
 <p style='font-size: 17px'>Este endpoint é responsável por inserir uma nova simulação.</p>
+<img src="docs/imgPost.png" width="700px">
+
 <div style='background-color: rgba(171, 103, 33, 0.1); padding: 10px'>
   <b style='font-size: 16px; color:#FA8F21; font-weight: normal'>`POST host/users`</b><br>
   Quando cadastro um novo usuário dado name e job então retorna status <b style='font-weight: normal; color:#099F18'>201</b></br>
