@@ -108,15 +108,15 @@ Adicionado na 📂 postman do projeto collection e environment.
 <img src="docs/imgPost.png" width="700px">
 
 <img src="docs/txtConsultar.png">
-<p style='font-size: 17px'>Este endpoint é responsável por alterar uma cadastro já existente.</p>
+<p style='font-size: 17px'>Este endpoint é responsável por retorna a simulação previamente</p>
 <img src="docs/imgGET.png" width="700px">
 
 <img src="docs/txtAlterar.png">
-<p style='font-size: 17px'>Este endpoint é responsável por retorna a simulação previamente cadastrada.</p>
+<p style='font-size: 17px'>Este endpoint é responsável por alterar um cadastro já existente.</p>
 <img src="docs/imgPutPatch.png" width="700px">
 
 <img src="docs/txtRemove.png">
-<p style='font-size: 17px'>Este endpoint é responsável por remove um usuário previamente cadastrado pelo seu ID.</p>
+<p style='font-size: 17px'>Este endpoint é responsável por remover um usuário previamente cadastrado pelo seu ID.</p>
 <img src="docs/imgDELETE.png" width="700px">
 
 [⬆ Voltar ao topo](#)<br>
