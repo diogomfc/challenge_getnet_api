@@ -68,9 +68,7 @@ Adicionado na 📂 postman do projeto collection e environment.
 
 ## 🧪 Cobertura dos testes
 
-### <b style='color:#FA8F21'>CADASTRO DE USUÁRIOS</b>
-
-<font color=\"red\">Texto com cor vermelha</font>
+<img src="docs/txtCadastro.png">
 
 <p style='font-size: 17px'>Este endpoint é responsável por inserir uma nova simulação.</p>
 <div style='background-color: rgba(171, 103, 33, 0.1); padding: 10px'>
