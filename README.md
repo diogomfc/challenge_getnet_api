@@ -70,8 +70,6 @@ Adicionado na 📂 postman do projeto collection e environment.
 
 ### <b style='color:#FA8F21'>CADASTRO DE USUÁRIOS</b>
 
-- ![#f03c15](https://via.placeholder.com/20/f03c15?text="PUT") `<host>/api/v1/restricoes/`
-
 <p style='font-size: 17px'>Este endpoint é responsável por inserir uma nova simulação.</p>
 <div style='background-color: rgba(171, 103, 33, 0.1); padding: 10px'>
   <b style='font-size: 16px; color:#FA8F21; font-weight: normal'>`POST host/users`</b><br>
