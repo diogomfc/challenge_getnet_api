@@ -71,7 +71,7 @@ Adicionado na 📂 postman do projeto collection e environment.
 <img src="docs/imgPost.png" width="700px">
 
 <img src="docs/txtConsultar.png">
-<p style='font-size: 17px'>Este endpoint é responsável por retorna a simulação previamente cadastrada.</p>
+<p style='font-size: 17px'>Este endpoint é responsável por retorna os usuários previamente cadastrada.</p>
 <img src="docs/imgGET.png" width="700px">
 
 <img src="docs/txtAlterar.png">
