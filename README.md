@@ -5,7 +5,7 @@
 API utilizada: https://reqres.in/api
 
 Este projeto possui testes automatizados de API, para o desafio da Getnet.
-Nele foram feitos testes automatizados em dois Frameworks separados: Rest-Assured e Robot Framework com auxílio da plataforma Postman, baseando-se na documentação da API https://reqres.in/api-docs/
+Nele foram feitos testes automatizados com o Frameworks Rest-Assured com auxílio da plataforma Postman, baseando-se na documentação da API https://reqres.in/api-docs/
 
 #
 
@@ -56,43 +56,6 @@ Para executar os testes vá até a pasta de testes desejada e execute.
 ```
 
 ---
-
-## 🤖 Robot Framework
-
-Tecnologias utilizadas:
-
-- [Robot Framework](https://robotframework.org/)
-
-Estrutura das pastas:
-
-📂 services/</br>
-&nbsp; &nbsp; &nbsp;🍵Base.java (Onde está classe base)<br>
-📂 services/</br>
-&nbsp; &nbsp; &nbsp;🍵Service.java (Onde está classe de services)<br>
-
-## 🚀 Rodando o Projeto Robot Framework
-
-```bash
-# Clone este repositório
-$ git clone https://github.com/diogomfc/challenge_getnet_api
-# ou use a opção de download.
-
-# Acesse a pasta do projeto
-$ cd challenge_getnet_api
-
-# Acesse a pasta do em restassured
-$ cd getnet_api_restassured
-
-# Instale as dependências e plugin no repositório maven conforme arquivo pom.xml
-https://mvnrepository.com/
-
-# Executando os testes
-Para executar os testes vá até a pasta de testes desejada e execute.
-
-```
-
----
-
 ### 🟠 Postman
 
 <img src="postman/result-tests.png">
@@ -108,7 +71,7 @@ Adicionado na 📂 postman do projeto collection e environment.
 <img src="docs/imgPost.png" width="700px">
 
 <img src="docs/txtConsultar.png">
-<p style='font-size: 17px'>Este endpoint é responsável por retorna a simulação previamente cadastrada.</p>
+<p style='font-size: 17px'>Este endpoint é responsável por retorna os usuários previamente cadastrados.</p>
 <img src="docs/imgGET.png" width="700px">
 
 <img src="docs/txtAlterar.png">
