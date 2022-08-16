@@ -8,7 +8,7 @@ Library    JSONLibrary
 Library    String
 
 Library    REST     https://reqres.in/api/
-Resource   ${EXECDIR}/variables/Variables.resource
+Resource   ${EXECDIR}/variables/variables.robot
 
 *** Keywords ***
 Start Session

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Suite de testes GET
 
-Resource   ${EXECDIR}/resources/steps/stepGET.resource
+Resource   ${EXECDIR}/resources/steps/stepGET.robot
 
 *** Test Cases ***
 

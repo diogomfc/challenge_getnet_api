@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Guia para os testes de GET Users
 
-Resource   ${EXECDIR}/resources/base.resource
+Resource   ${EXECDIR}/resources/base.robot
 
 *** Keywords ***
 Validate status code 200
