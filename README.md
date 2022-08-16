@@ -9,8 +9,6 @@ Nele foram feitos testes automatizados com o **Frameworks Rest-Assured** e **Rob
 
 #
 
-## ⚙️ Frameworks Utilizados
-
 ## 🌐 RestAssured
 
 ## Pré-requisitos
