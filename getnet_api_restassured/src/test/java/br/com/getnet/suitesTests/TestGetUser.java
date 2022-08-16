@@ -17,7 +17,7 @@ public class TestGetUser {
   }
 
   @Test
-  public void DeveConsultarUsuariosDadoCpfValidoEntaoRetornaStatus200() {
+  public void DeveConsultarUsuariosDadoIdValidoEntaoRetornaStatus200() {
     Response response = getService.getSingleUser();
     assertEquals(200, response.getStatusCode());
     System.out.println("Consulta por um usuario realizada com sucesso!");
