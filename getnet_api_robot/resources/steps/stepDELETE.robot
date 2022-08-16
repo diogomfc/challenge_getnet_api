@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Guia para os testes de PATCH Users
+Documentation       Guia para os testes de DELETE Users
 
 Resource            ${EXECDIR}/resources/base.robot
 
@@ -7,6 +7,7 @@ Resource            ${EXECDIR}/resources/base.robot
 *** Keywords ***
 Validate status code 204
     Integer    response status    204
+    Output    response status
     Rest instances    ${OUTPUTDIR}/rest.delete_user.json
     Output    $
 
@@ -18,5 +19,4 @@ Quando realizar uma requisição para excluir um cadastro de usuário com id val
 
 Então a API irá retornar os dados da exclusão respondendo o código 204
     Validate status code 204
-    [Teardown]    Clear expectations
 

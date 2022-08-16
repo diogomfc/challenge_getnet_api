@@ -24,17 +24,17 @@
             "sslVerify": true,
             "allowRedirects": true,
             "timestamp": {
-                "utc": "2022-08-16T11:53:20.341891+00:00",
-                "local": "2022-08-16T08:53:20.341891-03:00"
+                "utc": "2022-08-16T15:48:46.697610+00:00",
+                "local": "2022-08-16T12:48:46.697610-03:00"
             }
         },
         "response": {
-            "seconds": 0.7280979999999999,
+            "seconds": 0.708836,
             "status": 204,
             "reason": "No Content",
             "body": "",
             "headers": {
-                "Date": "Tue, 16 Aug 2022 11:53:21 GMT",
+                "Date": "Tue, 16 Aug 2022 15:48:48 GMT",
                 "Content-Length": "0",
                 "Connection": "keep-alive",
                 "X-Powered-By": "Express",
@@ -43,16 +43,16 @@
                 "Via": "1.1 vegur",
                 "CF-Cache-Status": "DYNAMIC",
                 "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-                "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HCsEUNV5qAqQb2D3g%2FVC%2FXspgT7gKkAFeE2McH2ZLk07o6uHlzt9mgt591d5hCN00cIY6LBNxpVZdcPPk3eV93thoyn5C8auKSuq9e6U%2B4CJ5sAwV8dxR133p5AgqDQcSkU7A891yQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+                "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=H4nhcKiVAIIxE5DYddz%2FyuyPilru776AvAYxM602X%2BP650q5QZ4JgWAb2eDy6rdCY2kyW0aghEFRyZOOkUkePSqhewJD0n0NM1GocjiBUwpRh1MBUEzh1aroww%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
                 "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
                 "Server": "cloudflare",
-                "CF-RAY": "73b9f80b6ed8221e-MIA"
+                "CF-RAY": "73bb50f5affb25a8-GIG"
             }
         },
         "schema": {
             "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "DELETE https://reqres.in/api/users/2",
-            "description": "Getnet Api Robot.suitesTests.TestDeleteUser: Deve Excluir um registro de usuário dado id valido então retorna status 204",
+            "description": "suitesTests.TestDeleteUser: Deve Excluir um registro de usuário dado id valido então retorna status 204",
             "default": true,
             "examples": [],
             "type": "object",

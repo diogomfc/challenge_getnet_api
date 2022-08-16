@@ -25,10 +25,12 @@ Nele foram feitos testes automatizados no **Robot Frameworks** com auxílio da p
 
 ## Libraries utilizadas
 
-- <a href="https://robotframework.org/robotframework/latest/libraries/BuiltIn.html#library-documentation-top">BuiltIn</a>: library padrão do Robot que possui as palavras-chave mais utilizadas
-- <a href="https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html#library-documentation-top">RequestsLibrary</a>: utilizada para fazer as requisições HTTP REST
-- <a href="https://pypi.org/project/robotframework-faker/">Robot Framework Faker</a>: para fazer um fake das massas de dados dentro dos testes
-- <a href="https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html">Operating System</a>: para ler os arquivos JSON
+- <a href="https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html">RequestsLibrary</a>: destinada a fornecer funcionalidades de teste de API HTTP.
+- <a href="https://robotframework.org/robotframework/latest/libraries/Collections.html">Collections</a>: destinada a fornecer palavras-chave para lidar com listas e dicionários.
+- <a href="https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html">OperatingSystem</a>: destinada a fornecer palavras-chave para tarefas relacionadas ao sistema operacional.
+- <a href="https://robotframework-thailand.github.io/robotframework-jsonlibrary/JSONLibrary.html">JSONLibrary</a>: é uma biblioteca de teste para manipulação de objetos JSON (dicionário)
+- <a href="https://robotframework.org/robotframework/latest/libraries/String.html">String</a>: é uma biblioteca para manipulação e verificação de strings.
+- <a href="https://asyrjasalo.github.io/RESTinstance/">RESTinstance</a>: é uma biblioteca de teste HTTP JSON API revolucionária e pacífica
 
 ## Extensões VS Code recomendadas
 
@@ -39,7 +41,6 @@ Nele foram feitos testes automatizados no **Robot Frameworks** com auxílio da p
 ## Estrutura das pastas
 
 📂 resources</br>
-&nbsp; &nbsp; &nbsp;📂 inputData (Onde está aquivos de data)<br>
 &nbsp; &nbsp; &nbsp;📂 steps (Onde está os guias para cada end point)<br>
 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPOST.robot <br>
 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepGET.robot <br>

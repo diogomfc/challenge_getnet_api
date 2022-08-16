@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220816 08:53:17.904" rpa="false" schemaversion="3">
-<suite id="s1" name="Getnet Api Robot" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot">
-<suite id="s1-s1" name="suitesTests" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests">
-<suite id="s1-s1-s1" name="TestDeleteUser" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests\TestDeleteUser.robot">
-<test id="s1-s1-s1-t1" name="Deve Excluir um registro de usuário dado id valido então retorna status 204" line="8">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220816 12:47:42.277" rpa="false" schemaversion="3">
+<suite id="s1" name="suitesTests" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests">
+<suite id="s1-s1" name="TestDeleteUser" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests\TestDeleteUser.robot">
+<test id="s1-s1-t1" name="Deve Excluir um registro de usuário dado id valido então retorna status 204" line="8">
 <kw name="Dado o endereço da API" library="stepDELETE">
 <kw name="Start Session" library="base">
 <kw name="Create Session" library="RequestsLibrary">
@@ -11,21 +10,21 @@
 <arg>${BASE_URL}</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220816 08:53:18.607" level="INFO">Creating Session using : alias=GETNET_API_ROBOT, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20220816 08:53:18.607" endtime="20220816 08:53:18.608"/>
+<msg timestamp="20220816 12:47:42.985" level="INFO">Creating Session using : alias=GETNET_API_ROBOT, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220816 12:47:42.985" endtime="20220816 12:47:42.985"/>
 </kw>
-<status status="PASS" starttime="20220816 08:53:18.606" endtime="20220816 08:53:18.608"/>
+<status status="PASS" starttime="20220816 12:47:42.985" endtime="20220816 12:47:42.986"/>
 </kw>
-<status status="PASS" starttime="20220816 08:53:18.606" endtime="20220816 08:53:18.609"/>
+<status status="PASS" starttime="20220816 12:47:42.984" endtime="20220816 12:47:42.986"/>
 </kw>
 <kw name="Quando realizar uma requisição para excluir um cadastro de usuário com id valido" library="stepDELETE">
 <kw name="DELETE" library="REST">
 <arg>${ENDPOINT_DELETE}</arg>
 <tag>http</tag>
 <doc>*Sends a DELETE request to the endpoint.*</doc>
-<status status="PASS" starttime="20220816 08:53:18.610" endtime="20220816 08:53:20.346"/>
+<status status="PASS" starttime="20220816 12:47:42.986" endtime="20220816 12:48:46.701"/>
 </kw>
-<status status="PASS" starttime="20220816 08:53:18.609" endtime="20220816 08:53:20.347"/>
+<status status="PASS" starttime="20220816 12:47:42.986" endtime="20220816 12:48:46.701"/>
 </kw>
 <kw name="Então a API irá retornar os dados da exclusão respondendo o código 204" library="stepDELETE">
 <kw name="Validate status code 204" library="stepDELETE">
@@ -34,40 +33,41 @@
 <arg>204</arg>
 <tag>assertions</tag>
 <doc>*Asserts the field as JSON integer.*</doc>
-<status status="PASS" starttime="20220816 08:53:20.349" endtime="20220816 08:53:20.351"/>
+<status status="PASS" starttime="20220816 12:48:46.702" endtime="20220816 12:48:46.704"/>
+</kw>
+<kw name="Output" library="REST">
+<arg>response status</arg>
+<tag>I/O</tag>
+<doc>*Outputs JSON to terminal or a file.*</doc>
+<msg timestamp="20220816 12:48:46.704" level="INFO">
+204</msg>
+<status status="PASS" starttime="20220816 12:48:46.704" endtime="20220816 12:48:46.716"/>
 </kw>
 <kw name="REST Instances" library="REST">
 <arg>${OUTPUTDIR}/rest.delete_user.json</arg>
 <tag>I/O</tag>
 <doc>*Writes the instances as JSON to a file.*</doc>
-<status status="PASS" starttime="20220816 08:53:20.351" endtime="20220816 08:53:20.353"/>
+<status status="PASS" starttime="20220816 12:48:46.717" endtime="20220816 12:48:46.718"/>
 </kw>
 <kw name="Output" library="REST">
 <arg>$</arg>
 <tag>I/O</tag>
 <doc>*Outputs JSON to terminal or a file.*</doc>
-<msg timestamp="20220816 08:53:20.354" level="INFO">
+<msg timestamp="20220816 12:48:46.718" level="INFO">
 ""</msg>
-<status status="PASS" starttime="20220816 08:53:20.353" endtime="20220816 08:53:20.369"/>
+<status status="PASS" starttime="20220816 12:48:46.718" endtime="20220816 12:48:46.719"/>
 </kw>
-<status status="PASS" starttime="20220816 08:53:20.348" endtime="20220816 08:53:20.370"/>
+<status status="PASS" starttime="20220816 12:48:46.702" endtime="20220816 12:48:46.719"/>
 </kw>
-<kw name="Clear Expectations" library="REST" type="TEARDOWN">
-<tag>expectations</tag>
-<doc>*Resets the expectations for both request and response.*</doc>
-<status status="PASS" starttime="20220816 08:53:20.370" endtime="20220816 08:53:20.371"/>
-</kw>
-<status status="PASS" starttime="20220816 08:53:20.347" endtime="20220816 08:53:20.371"/>
+<status status="PASS" starttime="20220816 12:48:46.702" endtime="20220816 12:48:46.719"/>
 </kw>
 <tag>delete</tag>
-<status status="PASS" starttime="20220816 08:53:18.604" endtime="20220816 08:53:20.372"/>
+<status status="PASS" starttime="20220816 12:47:42.984" endtime="20220816 12:48:46.720"/>
 </test>
 <doc>Suite de testes PATCH</doc>
-<status status="PASS" starttime="20220816 08:53:17.941" endtime="20220816 08:53:20.374"/>
+<status status="PASS" starttime="20220816 12:47:42.300" endtime="20220816 12:48:46.721"/>
 </suite>
-<status status="PASS" starttime="20220816 08:53:17.938" endtime="20220816 08:53:20.377"/>
-</suite>
-<status status="PASS" starttime="20220816 08:53:17.910" endtime="20220816 08:53:20.379"/>
+<status status="PASS" starttime="20220816 12:47:42.279" endtime="20220816 12:48:46.723"/>
 </suite>
 <statistics>
 <total>
@@ -77,9 +77,8 @@
 <stat pass="1" fail="0" skip="0">delete</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Getnet Api Robot">Getnet Api Robot</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="suitesTests">Getnet Api Robot.suitesTests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestDeleteUser">Getnet Api Robot.suitesTests.TestDeleteUser</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="suitesTests">suitesTests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestDeleteUser">suitesTests.TestDeleteUser</stat>
 </suite>
 </statistics>
 <errors>

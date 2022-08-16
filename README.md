@@ -1,4 +1,6 @@
-# Testes Automatizados de API
+<div align="center">
+<h1>Testes Automatizados de API</h1>
+</div>
 
 ## Desafio - Getnet
 
@@ -72,14 +74,16 @@ Para executar os testes vá até a pasta de testes desejada e execute.
 - <a href="https://www.python.org/downloads/">Python 3</a>: é a linguagem base do Robot Framework
 - <a href="https://robotframework.org/">Robot Framework</a>: para fazer a automação de testes através das libraries
 - <a href="https://git-scm.com/downloads">Git</a>: para clonar o projeto para a sua máquina
-- <a href="https://code.visualstudio.com/">Visual Studio Code</a> para rodar o projeto na sua máquina
+- <a href="https://code.visualstudio.com/">Visual Studio Code</a>: para rodar o projeto na sua máquina
 
 ## Libraries utilizadas
 
-- <a href="https://robotframework.org/robotframework/latest/libraries/BuiltIn.html#library-documentation-top">BuiltIn</a>: library padrão do Robot que possui as palavras-chave mais utilizadas
-- <a href="https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html#library-documentation-top">RequestsLibrary</a>: utilizada para fazer as requisições HTTP REST
-- <a href="https://pypi.org/project/robotframework-faker/">Robot Framework Faker</a>: para fazer um fake das massas de dados dentro dos testes
-- <a href="https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html">Operating System</a>: para ler os arquivos JSON
+- <a href="https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html">RequestsLibrary</a>: destinada a fornecer funcionalidades de teste de API HTTP.
+- <a href="https://robotframework.org/robotframework/latest/libraries/Collections.html">Collections</a>: destinada a fornecer palavras-chave para lidar com listas e dicionários.
+- <a href="https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html">OperatingSystem</a>: destinada a fornecer palavras-chave para tarefas relacionadas ao sistema operacional.
+- <a href="https://robotframework-thailand.github.io/robotframework-jsonlibrary/JSONLibrary.html">JSONLibrary</a>: é uma biblioteca de teste para manipulação de objetos JSON (dicionário)
+- <a href="https://robotframework.org/robotframework/latest/libraries/String.html">String</a>: é uma biblioteca para manipulação e verificação de strings.
+- <a href="https://asyrjasalo.github.io/RESTinstance/">RESTinstance</a>: é uma biblioteca de teste HTTP JSON API revolucionária e pacífica
 
 ## Extensões VS Code recomendadas
 
@@ -90,7 +94,6 @@ Para executar os testes vá até a pasta de testes desejada e execute.
 ## Estrutura das pastas
 
 📂 resources</br>
-&nbsp; &nbsp; &nbsp;📂 inputData (Onde está aquivos de data)<br>
 &nbsp; &nbsp; &nbsp;📂 steps (Onde está os guias para cada end point)<br>
 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPOST.robot <br>
 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepGET.robot <br>
