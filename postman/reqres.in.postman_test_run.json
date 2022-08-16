@@ -1,7 +1,7 @@
 {
-	"id": "8a0cde1a-7e8f-466d-bd36-a9f077b6ce67",
+	"id": "18103779-7461-470b-81a5-d3504089d20e",
 	"name": "reqres.in",
-	"timestamp": "2022-08-13T21:49:06.975Z",
+	"timestamp": "2022-08-16T11:42:10.531Z",
 	"collection_id": "22630227-9ae76127-afde-49cf-b4c7-21cb0db0521b",
 	"folder_id": 0,
 	"environment_id": "22630227-5bd65568-8cac-4d4f-ad35-cac8d2191b37",
@@ -12,7 +12,7 @@
 			"id": "e214c848-a3fb-4528-9fae-79e3819c0353",
 			"name": "Deve listar todos usuários da pagina2 então retorna status 200",
 			"url": "https://reqres.in/api/users?page=2",
-			"time": 81,
+			"time": 458,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -27,7 +27,7 @@
 				}
 			},
 			"times": [
-				81
+				458
 			],
 			"allTests": [
 				{
@@ -37,9 +37,9 @@
 		},
 		{
 			"id": "cb87e85d-9608-499a-9086-cb22757a4774",
-			"name": "Deve consultar usuário dado cpf valido então retorna status 200",
+			"name": "Deve consultar usuário dado id valido então retorna status 200",
 			"url": "https://reqres.in/api/users/4",
-			"time": 2884,
+			"time": 452,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -54,7 +54,7 @@
 				}
 			},
 			"times": [
-				2884
+				452
 			],
 			"allTests": [
 				{
@@ -66,7 +66,7 @@
 			"id": "a48075c8-8926-4881-be3a-59a0f27d768a",
 			"name": "Não deve consultar usuário dado id inválido então retorna status 404",
 			"url": "https://reqres.in/api/users/23",
-			"time": 30,
+			"time": 438,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -81,7 +81,7 @@
 				}
 			},
 			"times": [
-				30
+				438
 			],
 			"allTests": [
 				{
@@ -93,7 +93,7 @@
 			"id": "a635f391-27e0-44ad-839b-7c58713215b3",
 			"name": "Deve listar todos usuários desconhecidos então retorna status 200",
 			"url": "https://reqres.in/api/unknown",
-			"time": 39,
+			"time": 443,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -108,7 +108,7 @@
 				}
 			},
 			"times": [
-				39
+				443
 			],
 			"allTests": [
 				{
@@ -120,7 +120,7 @@
 			"id": "7e91284a-e2e1-432f-b0c8-06357b916ac2",
 			"name": "Deve consultar usuário desconhecidos dado id valido então retorna status 200",
 			"url": "https://reqres.in/api/unknown/2",
-			"time": 390,
+			"time": 431,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -135,7 +135,7 @@
 				}
 			},
 			"times": [
-				390
+				431
 			],
 			"allTests": [
 				{
@@ -147,7 +147,7 @@
 			"id": "1bbe36e8-ca3e-4777-90fd-15b75c9d0715",
 			"name": "Não deve consultar usuários desconhecidos dado id inválido então retorna status 404",
 			"url": "https://reqres.in/api/unknown/23",
-			"time": 32,
+			"time": 431,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -162,7 +162,7 @@
 				}
 			},
 			"times": [
-				32
+				431
 			],
 			"allTests": [
 				{
@@ -174,7 +174,7 @@
 			"id": "e750bb93-8710-4795-ba01-dbb26db161cf",
 			"name": "Deve listar todos usuários com delay então retorna status 200",
 			"url": "https://reqres.in/api/users?delay=3",
-			"time": 3490,
+			"time": 3431,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -189,7 +189,7 @@
 				}
 			},
 			"times": [
-				3490
+				3431
 			],
 			"allTests": [
 				{
@@ -201,7 +201,7 @@
 			"id": "2081a96c-996f-44d9-85ac-4ddbab6ccdde",
 			"name": "Quando cadastro um novo usuário dado name e job então retorna status 201",
 			"url": "https://reqres.in/api/users",
-			"time": 430,
+			"time": 433,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -216,7 +216,7 @@
 				}
 			},
 			"times": [
-				430
+				433
 			],
 			"allTests": [
 				{
@@ -228,7 +228,7 @@
 			"id": "c6546fab-d65a-4f5d-b562-aa85a47c6f50",
 			"name": "Quando registro um usuário dado e-mail e password então retorna status 200",
 			"url": "https://reqres.in/api/register",
-			"time": 762,
+			"time": 443,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -243,7 +243,7 @@
 				}
 			},
 			"times": [
-				762
+				443
 			],
 			"allTests": [
 				{
@@ -255,7 +255,7 @@
 			"id": "64fcd105-3bea-441f-96e3-35a035b0900d",
 			"name": "Não deve registrar um novo usuário dado password vazio então retorna status 400",
 			"url": "https://reqres.in/api/register",
-			"time": 884,
+			"time": 482,
 			"responseCode": {
 				"code": 400,
 				"name": "Bad Request"
@@ -275,7 +275,7 @@
 				}
 			},
 			"times": [
-				884
+				482
 			],
 			"allTests": [
 				{
@@ -288,7 +288,7 @@
 			"id": "cf57f4f0-f699-4da9-beca-adb8c1efa5f6",
 			"name": "Quando efetuo login dado email e password validos então retorna status 200",
 			"url": "https://reqres.in/api/Login",
-			"time": 425,
+			"time": 432,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -303,7 +303,7 @@
 				}
 			},
 			"times": [
-				425
+				432
 			],
 			"allTests": [
 				{
@@ -315,7 +315,7 @@
 			"id": "d4287d7e-0a11-4100-9c3d-8bbd6e42833b",
 			"name": "Não deve efetuar login dado password vazio então retorna status 400",
 			"url": "https://reqres.in/api/Login",
-			"time": 428,
+			"time": 461,
 			"responseCode": {
 				"code": 400,
 				"name": "Bad Request"
@@ -335,7 +335,7 @@
 				}
 			},
 			"times": [
-				428
+				461
 			],
 			"allTests": [
 				{
@@ -348,7 +348,7 @@
 			"id": "71906f00-ceb9-4d0c-b3e9-5a59535a4a4f",
 			"name": "Deve Atualizar o cadastro do usuário dado name e job então retorna status 200",
 			"url": "https://reqres.in/api/users/2",
-			"time": 478,
+			"time": 470,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -363,7 +363,7 @@
 				}
 			},
 			"times": [
-				478
+				470
 			],
 			"allTests": [
 				{
@@ -375,7 +375,7 @@
 			"id": "baae919e-fec5-4d38-ae2d-0beb911de4c3",
 			"name": "Deve Atualizar o cadastro do usuário dado name e job então retorna status 200 Copy",
 			"url": "https://reqres.in/api/users/2",
-			"time": 430,
+			"time": 445,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -390,7 +390,7 @@
 				}
 			},
 			"times": [
-				430
+				445
 			],
 			"allTests": [
 				{
@@ -400,34 +400,34 @@
 		},
 		{
 			"id": "c5092221-56b9-4f74-8205-4d95c029176b",
-			"name": "Deve Excluir um registro de usuário dado id valido então retorna status 200",
+			"name": "Deve Excluir um registro de usuário dado id valido então retorna status 204",
 			"url": "https://reqres.in/api/users/2",
-			"time": 65,
+			"time": 445,
 			"responseCode": {
-				"code": 200,
-				"name": "OK"
+				"code": 204,
+				"name": "No Content"
 			},
 			"tests": {
-				"Validar status de retorno = 200": true
+				"Validar status de retorno = 204": true
 			},
 			"testPassFailCounts": {
-				"Validar status de retorno = 200": {
+				"Validar status de retorno = 204": {
 					"pass": 1,
 					"fail": 0
 				}
 			},
 			"times": [
-				65
+				445
 			],
 			"allTests": [
 				{
-					"Validar status de retorno = 200": true
+					"Validar status de retorno = 204": true
 				}
 			]
 		}
 	],
 	"count": 1,
-	"totalTime": 10848,
+	"totalTime": 9695,
 	"collection": {
 		"requests": [
 			{
@@ -488,7 +488,7 @@
 			},
 			{
 				"id": "c5092221-56b9-4f74-8205-4d95c029176b",
-				"method": "GET"
+				"method": "DELETE"
 			}
 		]
 	}

@@ -58,7 +58,7 @@
 					"response": []
 				},
 				{
-					"name": "Deve consultar usuário dado cpf valido então retorna status 200",
+					"name": "Deve consultar usuário dado id valido então retorna status 200",
 					"event": [
 						{
 							"listen": "test",
@@ -574,14 +574,14 @@
 			"name": "DELETE",
 			"item": [
 				{
-					"name": "Deve Excluir um registro de usuário dado id valido então retorna status 200",
+					"name": "Deve Excluir um registro de usuário dado id valido então retorna status 204",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Validar status de retorno = 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Validar status de retorno = 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -589,7 +589,7 @@
 						}
 					],
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
 							"raw": "{{host}}/users/2",
