@@ -5,7 +5,7 @@
 API utilizada: https://reqres.in/api
 
 Este projeto possui testes automatizados de API, para o desafio da Getnet.
-Nele foram feitos testes automatizados no Robot Frameworks com auxílio da plataforma Postman, baseando-se na documentação da API https://reqres.in/api-docs/
+Nele foram feitos testes automatizados no **Robot Frameworks** com auxílio da plataforma **Postman**, baseando-se na documentação da API https://reqres.in/api-docs/
 
 #
 
@@ -13,7 +13,7 @@ Nele foram feitos testes automatizados no Robot Frameworks com auxílio da plata
 
 - Escrita de cenários de teste em BDD
 - Utilização das libraries do Robot
-- Lidar com requests e responses
+- Lidar com requests e responsess
 - Manipular dados estáticos
 
 ## Pré-requisitos
@@ -38,16 +38,15 @@ Nele foram feitos testes automatizados no Robot Frameworks com auxílio da plata
 
 ## Estrutura das pastas
 
-📂 inputData/</br>
-&nbsp; &nbsp; &nbsp;🤖 variables.resource (Onde está variáveis do projeto)<br>
-📂 resources/</br>
-&nbsp; &nbsp; &nbsp;📂 steps (Onde está o guia para cada end point)<br>
-&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPOST.resource <br>
-&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepGET.resource <br>
-&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPATCH.resource <br>
-&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPUT.resource <br>
-&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepDELETE.resource <br>
-&nbsp; &nbsp; &nbsp;🤖 base.robot (Onde está o arquivo base do projeto)<br>
+📂 resources</br>
+&nbsp; &nbsp; &nbsp;📂 inputData (Onde está aquivos de data)<br>
+&nbsp; &nbsp; &nbsp;📂 steps (Onde está os guias para cada end point)<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPOST.robot <br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepGET.robot <br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPATCH.robot <br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepPUT.robot <br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🤖 stepDELETE.robot <br>
+&nbsp; &nbsp; &nbsp;🤖 base.robot (Onde está o arquivo base para os steps)<br>
 📂 results (Onde está os reports)<br>
 📂 suitesTests (Onde está os testes para cada end point)<br>
 &nbsp; &nbsp; &nbsp;🤖 TestPostUser.robot<br>
@@ -55,8 +54,8 @@ Nele foram feitos testes automatizados no Robot Frameworks com auxílio da plata
 &nbsp; &nbsp; &nbsp;🤖 TestPatchUser.robot <br>
 &nbsp; &nbsp; &nbsp;🤖 TestPutUser.robot <br>
 &nbsp; &nbsp; &nbsp;🤖 TestDelete.robot <br>
-📂 variables <br>
-&nbsp; &nbsp; &nbsp;🤖 variables.resource<br>
+📂 variables (Onde está as variables do projeto) <br>
+&nbsp; &nbsp; &nbsp;🤖 variables.robot<br>
 
 ## 🚀 Rodando o Projeto Robot Framework
 
