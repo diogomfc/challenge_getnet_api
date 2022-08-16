@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "email": "diogomfc@hotmail.com",
+      "first_name": "Diogo",
+      "last_name": "Silva",
+      "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    {
+      "email": "davilluca@hotmail.com",
+      "first_name": "Davi",
+      "last_name": "Lucca",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "email": "gabrielly@hotmail.com",
+      "first_name": "Gabrielly",
+      "last_name": "Rodrigues",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    }
+  ]
+}

@@ -1,133 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220815 20:58:01.811" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220815 23:03:36.248" rpa="false" schemaversion="3">
 <suite id="s1" name="Getnet Api Robot" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot">
 <suite id="s1-s1" name="suitesTests" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests">
-<suite id="s1-s1-s1" name="TestGetUser" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests\TestGetUser.robot">
-<test id="s1-s1-s1-t1" name="Deve listar todos usuários da página 2 então retorna status 200" line="8">
-<kw name="Dado o endereço da API" library="stepGET">
+<suite id="s1-s1-s1" name="TestPostUser" source="H:\WWW\TESTES-QA\GETNET\challenge_getnet_api\getnet_api_robot\suitesTests\TestPostUser.robot">
+<test id="s1-s1-s1-t1" name="Deve Atualizar o cadastro do usuário dado name e job então retorna status 200" line="8">
+<kw name="Dado o endereço da API" library="stepPATCH">
 <kw name="Start Session" library="base">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>GETNET_API_ROBOT</arg>
 <arg>${BASE_URL}</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220815 20:58:02.252" level="INFO">Creating Session using : alias=GETNET_API_ROBOT, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20220815 20:58:02.252" endtime="20220815 20:58:02.253"/>
+<msg timestamp="20220815 23:03:36.957" level="INFO">Creating Session using : alias=GETNET_API_ROBOT, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220815 23:03:36.957" endtime="20220815 23:03:36.958"/>
 </kw>
-<status status="PASS" starttime="20220815 20:58:02.251" endtime="20220815 20:58:02.254"/>
+<status status="PASS" starttime="20220815 23:03:36.956" endtime="20220815 23:03:36.958"/>
 </kw>
-<status status="PASS" starttime="20220815 20:58:02.251" endtime="20220815 20:58:02.254"/>
+<status status="PASS" starttime="20220815 23:03:36.955" endtime="20220815 23:03:36.959"/>
 </kw>
-<kw name="Quando realizar uma requisição para listar todos os usuários" library="stepGET">
-<kw name="GET" library="REST">
-<arg>${ENDPOINT_LIST_USERS}</arg>
+<kw name="Quando realizar uma requisição alterando o cadastro do usuário para name: Davi Lucca , Job: ADM" library="stepPATCH" sourcename="Quando realizar uma requisição alterando o cadastro do usuário para name: ${name} , Job: ${job}">
+<kw name="PATCH" library="REST">
+<arg>${ENDPOINT_UPDATE}</arg>
+<arg>{"name": "${name}", "job": "${job}"}</arg>
 <tag>http</tag>
-<doc>*Sends a GET request to the endpoint.*</doc>
-<status status="PASS" starttime="20220815 20:58:02.255" endtime="20220815 20:58:23.801"/>
+<doc>*Sends a PATCH request to the endpoint.*</doc>
+<status status="PASS" starttime="20220815 23:03:36.960" endtime="20220815 23:03:37.661"/>
 </kw>
-<status status="PASS" starttime="20220815 20:58:02.254" endtime="20220815 20:58:23.801"/>
+<status status="PASS" starttime="20220815 23:03:36.960" endtime="20220815 23:03:37.662"/>
 </kw>
-<kw name="Então a API irá retornar os dados correspondentes respondendo o código 200" library="stepGET">
-<kw name="GET" library="REST">
-<arg>${ENDPOINT_LIST_USERS}</arg>
-<tag>http</tag>
-<doc>*Sends a GET request to the endpoint.*</doc>
-<status status="PASS" starttime="20220815 20:58:23.802" endtime="20220815 20:58:45.347"/>
-</kw>
-<kw name="Validate status code 200" library="stepGET">
+<kw name="Então a API irá retornar os dados alterados respondendo o código 200" library="stepPATCH">
+<kw name="Validate status code 200" library="stepPATCH">
 <kw name="Integer" library="REST">
 <arg>response status</arg>
 <arg>200</arg>
 <tag>assertions</tag>
 <doc>*Asserts the field as JSON integer.*</doc>
-<status status="PASS" starttime="20220815 20:58:45.348" endtime="20220815 20:58:45.350"/>
+<status status="PASS" starttime="20220815 23:03:37.663" endtime="20220815 23:03:37.665"/>
 </kw>
 <kw name="Output" library="REST">
 <arg>$</arg>
 <tag>I/O</tag>
 <doc>*Outputs JSON to terminal or a file.*</doc>
-<msg timestamp="20220815 20:58:45.351" level="INFO">
+<msg timestamp="20220815 23:03:37.666" level="INFO">
 {
-    "page": 2,
-    "per_page": 6,
-    "total": 12,
-    "total_pages": 2,
-    "data": [
-        {
-            "id": 7,
-            "email": "michael.lawson@reqres.in",
-            "first_name": "Michael",
-            "last_name": "Lawson",
-            "avatar": "https://reqres.in/img/faces/7-image.jpg"
-        },
-        {
-            "id": 8,
-            "email": "lindsay.ferguson@reqres.in",
-            "first_name": "Lindsay",
-            "last_name": "Ferguson",
-            "avatar": "https://reqres.in/img/faces/8-image.jpg"
-        },
-        {
-            "id": 9,
-            "email": "tobias.funke@reqres.in",
-            "first_name": "Tobias",
-            "last_name": "Funke",
-            "avatar": "https://reqres.in/img/faces/9-image.jpg"
-        },
-        {
-            "id": 10,
-            "email": "byron.fields@reqres.in",
-            "first_name": "Byron",
-            "last_name": "Fields",
-            "avatar": "https://reqres.in/img/faces/10-image.jpg"
-        },
-        {
-            "id": 11,
-            "email": "george.edwards@reqres.in",
-            "first_name": "George",
-            "last_name": "Edwards",
-            "avatar": "https://reqres.in/img/faces/11-image.jpg"
-        },
-        {
-            "id": 12,
-            "email": "rachel.howell@reqres.in",
-            "first_name": "Rachel",
-            "last_name": "Howell",
-            "avatar": "https://reqres.in/img/faces/12-image.jpg"
-        }
-    ],
-    "support": {
-        "url": "https://reqres.in/#support-heading",
-        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
-    }
+    "name": "Davi Lucca",
+    "job": "ADM",
+    "updatedAt": "2022-08-16T02:03:38.732Z"
 }</msg>
-<status status="PASS" starttime="20220815 20:58:45.350" endtime="20220815 20:58:45.373"/>
+<status status="PASS" starttime="20220815 23:03:37.665" endtime="20220815 23:03:37.680"/>
 </kw>
-<status status="PASS" starttime="20220815 20:58:45.347" endtime="20220815 20:58:45.373"/>
+<status status="PASS" starttime="20220815 23:03:37.663" endtime="20220815 23:03:37.681"/>
 </kw>
-<status status="PASS" starttime="20220815 20:58:23.802" endtime="20220815 20:58:45.374"/>
+<status status="PASS" starttime="20220815 23:03:37.662" endtime="20220815 23:03:37.681"/>
 </kw>
-<tag>GET1</tag>
-<status status="PASS" starttime="20220815 20:58:02.249" endtime="20220815 20:58:45.374"/>
+<tag>post</tag>
+<status status="PASS" starttime="20220815 23:03:36.954" endtime="20220815 23:03:37.682"/>
 </test>
-<doc>Suite de testes GET</doc>
-<status status="PASS" starttime="20220815 20:58:01.846" endtime="20220815 20:58:45.377"/>
+<doc>Suite de testes PATCH</doc>
+<status status="PASS" starttime="20220815 23:03:36.283" endtime="20220815 23:03:37.684"/>
 </suite>
-<status status="PASS" starttime="20220815 20:58:01.842" endtime="20220815 20:58:45.380"/>
+<status status="PASS" starttime="20220815 23:03:36.280" endtime="20220815 23:03:37.687"/>
 </suite>
-<status status="PASS" starttime="20220815 20:58:01.817" endtime="20220815 20:58:45.383"/>
+<status status="PASS" starttime="20220815 23:03:36.254" endtime="20220815 23:03:37.689"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">GET1</stat>
+<stat pass="1" fail="0" skip="0">post</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Getnet Api Robot">Getnet Api Robot</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="suitesTests">Getnet Api Robot.suitesTests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestGetUser">Getnet Api Robot.suitesTests.TestGetUser</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestPostUser">Getnet Api Robot.suitesTests.TestPostUser</stat>
 </suite>
 </statistics>
 <errors>
